@@ -384,7 +384,7 @@ class Excel extends \yii\base\Widget
 				} else {
 					$column_value = $this->executeGetColumnData($model, ['attribute' => $column]);
 				}
-				$activeSheet->setCellValue($col.$row,$column_value);
+				$activeSheet->setCellValue($col.$row,"{$column_value}");
 				$colnum++;
 			}
 			$row++;
